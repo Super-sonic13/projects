@@ -1,0 +1,32 @@
+{
+    "name": "vite-project-builder",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview"
+    },
+    "browser": {
+        "fs": false,
+        "path": false,
+        "stream": false,
+        "util": false
+    },
+    "devDependencies": {
+        "@babel/core": "^7.17.5",
+        "@babel/eslint-parser": "^7.17.0",
+        "@babel/preset-react": "^7.16.7",
+        "@types/node": "^18.0.0",
+        "prettier": "^2.5.1",
+        "vite": "^5.0.11"
+    },
+    "dependencies": {
+        "face-api.js": "^0.22.2",
+        "isomorphic-fetch": "^3.0.0",
+        "node-fetch": "^3.3.2",
+        "qrcode": "^1.5.3",
+        "socket.io": "^4.7.3"
+    }
+}
