@@ -1,0 +1,23 @@
+$board-width: 600px;
+$labelRow-width: 40px;
+
+.board {
+  display: grid;
+  grid-template-columns: $labelRow-width $board-width;
+  grid-template-rows: $board-width $labelRow-width;
+  height: $labelRow-width + $board-width;
+  width: $labelRow-width + $board-width;
+}
+
+.boardCells {
+  display: grid;
+  grid-template-rows: repeat(8, 1fr);
+  grid-template-columns: repeat(8, 1fr);
+  height: 100%;
+  width: 100%;
+}
+
+.blackSideBoardCells {
+  transform: rotate(180deg);
+}
+

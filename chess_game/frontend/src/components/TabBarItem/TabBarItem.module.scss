@@ -1,0 +1,20 @@
+@use '../../assets/styles/colors';
+
+.tab {
+  display: flex;
+  align-items: center;
+  background-color: colors.$grey;
+  justify-content: center;
+  padding: 0 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 5px;
+  height: 40px;
+  width: 100%;
+  transition: .2s;
+  cursor: pointer;
+}
+
+.activeTab {
+  background-color: colors.$dark-blue;
+  color: white;
+}

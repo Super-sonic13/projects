@@ -1,0 +1,9 @@
+.figureImage {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.rotatedFigureImg {
+  transform: rotate(180deg);
+}

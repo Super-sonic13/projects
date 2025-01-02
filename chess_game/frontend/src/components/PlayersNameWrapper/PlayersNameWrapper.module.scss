@@ -1,0 +1,11 @@
+@use '../../assets/styles/colors';
+
+.nameContainer {
+  display: flex;
+  align-items: center;
+  background-color: colors.$dark-blue;
+  font-style: bold;
+  color: white;
+  height: 100%;
+  width: 100%;
+}

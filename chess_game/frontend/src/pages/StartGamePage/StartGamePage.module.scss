@@ -1,0 +1,15 @@
+@use '../../assets/styles/colors';
+
+.startGamePage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(120deg, colors.$white 0%, colors.$white, 55%, colors.$light-blue 15%, colors.$light-blue 100%);
+  height: 100%;
+  width: 100%;
+}
+
+
+
+
+

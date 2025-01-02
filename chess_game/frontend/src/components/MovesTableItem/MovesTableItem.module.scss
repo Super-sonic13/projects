@@ -1,0 +1,22 @@
+@use '../../assets/styles/colors';
+
+.movesRow {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  &:nth-child(2n) {
+    background-color: colors.$grey;
+  }
+}
+
+.rowIndex {
+  display: flex;
+  background-color: colors.$light-blue;
+  color: white;
+  justify-content: center;
+}
+
+.moveContainer {
+  display: flex;
+  justify-content: center;
+  font-style: italic;
+}

@@ -1,0 +1,9 @@
+@use '../../../assets/styles/colors';
+
+.wrapper {
+  margin: 5px 10px;
+}
+
+.radio {
+  accent-color: colors.$dark-blue;
+}

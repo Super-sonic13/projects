@@ -1,0 +1,62 @@
+@use '../../assets/styles/colors';
+
+$tabBar-height: 40px;
+$form-height: 270px;
+$submitButton-height: 45px;
+$colorSegmetn-height: 60px;
+
+.form {
+  box-shadow: 0px 15px 25px 2px rgba(0,0,0,0.25);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 300px;
+  transition: .5s;
+}
+
+.newGameForm {
+  height: $form-height;
+}
+
+.joinGameForm {
+  height: $form-height - $colorSegmetn-height;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+  transition: .5s;
+}
+
+.newGameContainer {
+  height: $form-height - ($tabBar-height + $submitButton-height);
+}
+
+.joinGameContainer {
+  height: $form-height - ($tabBar-height + $submitButton-height + $colorSegmetn-height);
+}
+
+.chooseColorSegment {
+  display: flex;
+  align-items: center;
+  height: $colorSegmetn-height;
+}
+
+.submitButton {
+  background-color: colors.$grey;
+  border: none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-weight: 400;
+  height: $submitButton-height;
+  width: 100%;
+  transition: .5s;
+  &:hover {
+    background-color: colors.$dark-blue;
+    color: white;
+    cursor: pointer;
+  }
+}

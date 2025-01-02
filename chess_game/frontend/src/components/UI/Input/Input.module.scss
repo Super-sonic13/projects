@@ -1,0 +1,23 @@
+@use '../../../assets/styles/colors';
+
+.input {
+  border: none;
+  border-radius: 5px;
+  margin: 5px 0;
+  outline: none;
+  height: 35px;
+  width: 75%;
+}
+
+.input, textarea {
+  font-weight: 300;
+  font-style: italic;
+  background-color: colors.$grey;
+  padding: 0 5px;
+  &:focus {
+    font-weight: 400;
+    font-style: normal;
+    outline: 3px colors.$dark-blue solid;
+    background-color: white;
+  }
+}

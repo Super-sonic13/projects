@@ -1,0 +1,30 @@
+@use '../../assets/styles/colors';
+
+.boardCell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.whiteCell {
+  background-color: colors.$white;
+}
+
+.blackCell {
+  background-color: colors.$dark-blue;
+}
+
+.attackedCell {
+  background-color: red;
+}
+
+.availableMoveMark {
+  border-radius: 50%;
+  background-color:yellow;
+  height: 30%;
+  width: 30%;
+}
+
+
